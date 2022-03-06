@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "key-name-picker"
+version = "0.1.0"
+description = ""
+authors = ["sysraccoon <sysraccoon@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+pynput = "^1.7.6"
+keysymdef = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pynvim = "^0.4.3"
+
+[tool.poetry.scripts]
+run = "key_name_picker:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,8 @@
+#!/usr/bin/sh
+if [ -L "$0" ]; then
+    DIR="$(dirname "$(readlink -f "$0")")"
+else
+    DIR="$(cd "$(dirname "$0")" && pwd)"
+fi
+
+cd "$DIR" && poetry run
